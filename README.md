@@ -43,7 +43,7 @@ En este proyecto, se ha utilizado **Git** para gestionar el control de versiones
 ### Flujo de Trabajo con Ramas
 
 - **Rama `main`**:🌳 Esta es la rama principal, que contiene la versión estable y final del sitio web.
-- **Ramas de características (`branch-css`)**🌿 : Para cada nueva funcionalidad o cambio importante, se creó una rama dedicada. Estas ramas permitieron trabajar en nuevas características de manera aislada antes de integrarlas a la rama principal. Algunos ejemplos de ramas de características incluyen `add-html`.
+- **Ramas de características (`branch-css`)**🌿 : Para cada nueva funcionalidad o cambio importante, se creó una rama dedicada. Estas ramas permitieron trabajar en nuevas características de manera aislada antes de integrarlas a la rama principal. Algunos ejemplos de ramas de características incluyen (`add-html`).
 
 ### Práctica del Control de Versiones
 
