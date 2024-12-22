@@ -751,3 +751,230 @@ input[type='checkbox'] {
   /* footer fin */
 }
 /* media tablet fin */
+/* media desktop 1024px comienzo */
+@media (min-width: 1024px) {
+  .header {
+    justify-content: space-around;
+    margin-left: 4px;
+  }
+
+  .header-desktop {
+    display: flex;
+  }
+  .header-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+    gap: 10px;
+  }
+  .header-nav a {
+    margin-left: 25px;
+    color: white;
+    text-decoration: none;
+  }
+  .header-nav i {
+    font-size: 13px;
+    margin-left: 5px;
+  }
+  .header-nav button {
+    margin-left: 80px;
+    background-color: #fcaf17;
+    border: transparent;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 7px 10px;
+    transition: all 0.2s ease-in-out;
+  }
+  .header-nav button:hover {
+    background-color: #ca8b0d;
+  }
+
+  .header-lupa i {
+    font-size: 22px;
+    margin-left: 50px;
+  }
+  .header-img {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  .header-img:hover {
+    animation: shadow-animation 1s infinite;
+  }
+
+  /* Definir la animación de las sombras */
+  @keyframes shadow-animation {
+    0% {
+      box-shadow: 8px 8px 12px rgba(0, 200, 255, 0.6),
+        -8px -8px 12px rgba(255, 0, 150, 0.6),
+        4px 4px 8px rgba(150, 150, 150, 0.6);
+    }
+    25% {
+      box-shadow: -12px -12px 15px rgba(0, 200, 255, 0.6),
+        12px 12px 15px rgba(255, 0, 150, 0.6),
+        -4px -4px 12px rgba(150, 150, 150, 0.6);
+    }
+    50% {
+      box-shadow: 12px 12px 15px rgba(0, 200, 255, 0.6),
+        -12px -12px 15px rgba(255, 0, 150, 0.6),
+        4px 4px 12px rgba(150, 150, 150, 0.6);
+    }
+    75% {
+      box-shadow: -8px -8px 18px rgba(0, 200, 255, 0.6),
+        8px 8px 18px rgba(255, 0, 150, 0.6),
+        -8px -8px 10px rgba(150, 150, 150, 0.6);
+    }
+    100% {
+      box-shadow: 8px 8px 20px rgba(0, 200, 255, 0.6),
+        -8px -8px 20px rgba(255, 0, 150, 0.6),
+        4px 4px 15px rgba(150, 150, 150, 0.6);
+    }
+  }
+}
+
+/* header fin */
+/* ---------- */
+/* main comienzo */
+
+/* main fin */
+/* ---------- */
+/* newswire comienzo */
+.newswire-title a {
+  width: 30%;
+}
+.newswire-cards {
+  margin-bottom: 0px;
+  grid-template-columns: repeat(4);
+}
+/* newswire fin */
+/* ---------- */
+/* featured-games comienzo */
+
+.featured-const-cards {
+  width: 100%;
+  padding-bottom: 0px;
+}
+
+/* featured-games fin */
+/* ---------- */
+
+.footer-redes {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* media desktop 1024px fin */
+/* media desktop 1024px comienzo */
+@media (min-width: 1024px) {
+  .header {
+    justify-content: space-around;
+    margin-left: 4px;
+
+    .header-desktop {
+      display: flex;
+    }
+
+    .header-nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      align-content: space-between;
+      gap: 10px;
+
+      a {
+        margin-left: 25px;
+        color: white;
+        text-decoration: none;
+      }
+
+      i {
+        font-size: 13px;
+        margin-left: 5px;
+      }
+
+      button {
+        margin-left: 80px;
+        background-color: #fcaf17;
+        border: transparent;
+        border-radius: 3px;
+        font-size: 15px;
+        font-weight: 600;
+        padding: 7px 10px;
+        transition: all 0.2s ease-in-out;
+
+        .button:hover {
+          background-color: #ca8b0d;
+        }
+      }
+    }
+
+    .header-lupa i {
+      font-size: 22px;
+      margin-left: 50px;
+    }
+
+    .header-img {
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+
+      .header-img:hover {
+        animation: shadow-animation 1s infinite;
+      }
+    }
+  }
+
+  /* Definir la animación de las sombras */
+  @keyframes shadow-animation {
+    0% {
+      box-shadow: 8px 8px 12px rgba(0, 200, 255, 0.6),
+        -8px -8px 12px rgba(255, 0, 150, 0.6),
+        4px 4px 8px rgba(150, 150, 150, 0.6);
+    }
+    25% {
+      box-shadow: -12px -12px 15px rgba(0, 200, 255, 0.6),
+        12px 12px 15px rgba(255, 0, 150, 0.6),
+        -4px -4px 12px rgba(150, 150, 150, 0.6);
+    }
+    50% {
+      box-shadow: 12px 12px 15px rgba(0, 200, 255, 0.6),
+        -12px -12px 15px rgba(255, 0, 150, 0.6),
+        4px 4px 12px rgba(150, 150, 150, 0.6);
+    }
+    75% {
+      box-shadow: -8px -8px 18px rgba(0, 200, 255, 0.6),
+        8px 8px 18px rgba(255, 0, 150, 0.6),
+        -8px -8px 10px rgba(150, 150, 150, 0.6);
+    }
+    100% {
+      box-shadow: 8px 8px 20px rgba(0, 200, 255, 0.6),
+        -8px -8px 20px rgba(255, 0, 150, 0.6),
+        4px 4px 15px rgba(150, 150, 150, 0.6);
+    }
+  }
+
+  /* newswire comienzo */
+  .newswire-title a {
+    width: 30%;
+  }
+
+  .newswire-cards {
+    margin-bottom: 0px;
+    grid-template-columns: repeat(4);
+  }
+  /* newswire fin */
+
+  /* featured-games comienzo */
+  .featured-const-cards {
+    width: 100%;
+    padding-bottom: 0px;
+  }
+  /* featured-games fin */
+
+  /* footer */
+  .footer-redes {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+/* media desktop 1024px fin */
