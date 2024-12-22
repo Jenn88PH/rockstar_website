@@ -33,3 +33,260 @@ body {
   background-color: black;
   color: white;
 }
+/* header comienzo */
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  height: 83px;
+  padding: 32px;
+  overflow: hidden;
+  opacity: 0.9;
+  z-index: 1000;
+  backdrop-filter: blur(15px);
+
+  .header-izq {
+    margin-left: 8px;
+
+    svg {
+      color: white;
+      font-size: 50px;
+      cursor: pointer;
+      opacity: 1;
+    }
+  }
+
+  .header-img {
+    width: 30px;
+    opacity: 1;
+  }
+
+  .header-desktop,
+  .header-desktop-L {
+    display: none;
+    opacity: 1;
+  }
+
+  .header-der {
+    background: #313131;
+    width: 35px;
+    height: 35px;
+    font-weight: bold;
+    font-family: helveticaNowText, sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 10px;
+    opacity: 1;
+  }
+
+  .header-login {
+    color: white;
+    font-size: 20px;
+    opacity: 1;
+  }
+}
+
+.menu {
+  display: none; /* Ocultar menú por defecto */
+  flex-direction: column;
+  gap: 10px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 9999;
+
+  a {
+    color: white;
+    font-size: medium;
+    text-decoration: none;
+    padding: 15px;
+    background-color: black;
+    text-align: left;
+    width: 100%;
+    max-width: 300px;
+    transition: background-color 0.3s;
+  }
+}
+
+input[type='checkbox'] {
+  display: none; /* Ocultar checkbox */
+
+  &:checked ~ .menu {
+    display: flex;
+    transform: translateY(
+      0
+    ); /* Mostrar menú desplegable cuando está seleccionado */
+  }
+}
+
+.hamburger {
+  display: block;
+}
+
+/* main comienzo */
+.hero {
+  margin-top: 80px;
+
+  .hero-img {
+    width: 100%;
+  }
+
+  .hero-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 20px;
+    padding-top: 28px;
+  }
+
+  .hero-txt {
+    font-size: 12px;
+    padding-bottom: 3px;
+  }
+
+  .hero-btn {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 11px 0px;
+    margin-top: 23px;
+    font-size: 18px;
+    width: 100px;
+    margin-bottom: 13px;
+    transition: all 0.2s ease-in-out;
+
+    hero-btn:hover {
+      background-color: #fcaf17;
+      color: #0c0c0c;
+      border: 1px solid #fcaf17;
+    }
+  }
+
+  .hero-cont-btn-img {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+    margin-bottom: 33px;
+
+    .btn-img {
+      background-color: #949494;
+      border-radius: 2px;
+      width: 25px;
+      height: 2px;
+      margin-right: 10px;
+      transition: all 0.2s ease-in-out;
+
+      btn-img:hover {
+        background-color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+/* main fin */
+/* newswire comienzo */
+.newswire {
+  background-color: #0c0c0c;
+  padding: 0px 31px;
+  padding-top: 31px;
+
+  .newswire-title {
+    margin-bottom: 23px;
+  }
+
+  .newswire-cont-cards {
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: 300;
+    }
+  }
+
+  .newswire-card {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border: 1px solid #3f3f3f;
+    border-radius: 7.5px;
+    overflow: hidden;
+    height: 100%;
+
+    .newswire-img {
+      width: 100%;
+      height: fit-content;
+    }
+
+    .newswire-cont-txt {
+      padding: 22px 20px;
+
+      .newswire-cont-int {
+        display: flex;
+        flex-direction: row;
+
+        .newswire-txt,
+        .newswire-datetime {
+          font-size: 13px;
+        }
+
+        .newswire-datetime {
+          margin-left: 12px;
+          color: #949494;
+        }
+      }
+
+      .newswire-p {
+        font-size: 19px;
+        line-height: 1.2;
+        margin-top: 7.5px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .newswire-cont-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+
+    .newswire-btn {
+      color: white;
+      font-size: 17px;
+      font-weight: 400;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      border-radius: 2px;
+      margin-bottom: 33px;
+      transition: all 0.5s ease-in-out;
+      line-height: unset;
+      display: inline-block;
+      text-decoration: underline #fcaf17 2px;
+
+      .neswire-btn:hover {
+        color: #0c0c0c;
+        background-color: #fcaf17;
+      }
+    }
+  }
+}
+/* newswire fin */
