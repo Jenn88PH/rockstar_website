@@ -540,3 +540,214 @@ input[type='checkbox'] {
   }
 }
 /* footer fin */
+/* media tablet comienzo */
+@media (min-width: 768px) {
+  /* main comienzo */
+  .hero-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+    padding-top: 57px;
+
+    .hero-menu-txt {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-bottom: 53px;
+    }
+
+    .hero-txt {
+      font-size: 14px;
+    }
+
+    .hero-title {
+      font-size: 37px;
+    }
+
+    .hero-btn {
+      padding: 11px 45px;
+      margin-top: 0px;
+      font-size: 20px;
+      margin-bottom: 23px;
+      width: 120px;
+    }
+
+    .btn-img {
+      width: 75px;
+      height: 4px;
+    }
+
+    .hero-cont-btn-img {
+      padding-bottom: 38px;
+    }
+  }
+
+  .header-izq {
+    display: none;
+  }
+  /* main fin */
+
+  /* newswire comienzo */
+  .newswire {
+    padding-top: 70px;
+
+    .newswire-title {
+      padding-left: 22px;
+    }
+
+    .newswire-cont-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+      gap: 20px; /* Espaciado entre las tarjetas */
+      width: auto;
+
+      a {
+        width: 100%;
+        padding-bottom: 30px;
+      }
+    }
+
+    .newswire-img {
+      width: 100%;
+      height: 578px;
+    }
+
+    .newswire-card {
+      margin-bottom: 0px;
+    }
+
+    .newswire-txt,
+    .newswire-datetime {
+      font-size: 13px;
+    }
+
+    .newswire-p {
+      font-size: 25px;
+      line-height: 1.5;
+      margin-top: 10px;
+      font-weight: 500;
+    }
+
+    .newswire-cont-btn {
+      margin-top: 10px;
+      padding-bottom: 100px;
+    }
+
+    .newswire-btn {
+      font-size: 20px;
+    }
+  }
+  /* newswire fin */
+
+  /* featured-games comienzo */
+  .featured-section {
+    padding: 0px 36px;
+
+    .featured-section-title {
+      padding-left: 22px;
+      padding-bottom: 12px;
+    }
+
+    .featured-card {
+      width: auto;
+      padding-bottom: 20px;
+    }
+
+    .featured-square-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* Tres columnas iguales */
+      gap: 30px; /* Espaciado entre las tarjetas */
+    }
+
+    .featured-cont-btn {
+      margin-top: 33px;
+    }
+
+    .featured-btn {
+      margin-bottom: 50px;
+      font-size: 20px;
+    }
+
+    .subscription-container {
+      justify-items: center;
+
+      .subscription-text-container {
+        width: 575px;
+        text-align: center;
+      }
+    }
+  }
+  /* featured-games fin */
+
+  /* footer comienzo */
+  .footer {
+    padding-top: 60px;
+    margin: 0px 60px;
+    width: auto;
+    height: fit-content;
+
+    .footer-first {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .footer-first-izq {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        width: fit-content;
+
+        .footer-first-txt {
+          gap: 15px;
+          font-size: 18px;
+        }
+      }
+    }
+
+    .footer-redes {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+
+      .footer__sup-rrss {
+        padding: 0px;
+        display: flex;
+      }
+
+      .footer-cont-redes {
+        align-self: flex-start;
+        padding-top: 0px;
+        padding-bottom: 0px;
+      }
+    }
+
+    .footer-city {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 25px;
+
+      .footer-city-txt {
+        font-size: 13px;
+        font-weight: 400;
+      }
+
+      .footer-cities {
+        display: flex;
+        flex-direction: row;
+
+        p {
+          padding-right: 15px;
+        }
+      }
+    }
+
+    .footer-info-cont-txt {
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+    }
+  }
+  /* footer fin */
+}
+/* media tablet fin */
