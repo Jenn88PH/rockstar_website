@@ -1,0 +1,35 @@
+@import url('./reset.css');
+
+@font-face {
+  font-family: 'helveticaNow';
+  src: url('../RockstarDupe/fonts/helvetica-now-display/HelveticaNowDisplay-Black.eot')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'helveticaNowText';
+  src: url('../RockstarDupe/fonts/helvetica-now-display/HelveticaNowDisplay-ExtLt.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'helveticaNowDisplayBold';
+  src: url('../RockstarDupe/fonts/helvetica-now-font-family-1732613676-0/helveticanowtext-bold-demo.ttf')
+    format('truetype');
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'helvetica-now', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+img {
+  width: 25px;
+}
+body {
+  background-color: black;
+  color: white;
+}
