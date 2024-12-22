@@ -1,6 +1,6 @@
 # Rockstart Website Game🚀
 
-Este proyecto es una **duplicación del sitio web de Rockstart**🕹️, creada utilizando **solo HTML y CSS**. El objetivo principal es replicar el diseño y la estructura del sitio original, al mismo tiempo que se implementa un diseño **responsive** para que se vea bien en dispositivos de diferentes tamaños (móviles, tabletas, escritorios).
+Este proyecto es una **duplicación del hom web de Rockstart**🕹️, creada utilizando **solo HTML y CSS**. El objetivo principal es replicar el diseño y la estructura del sitio original, al mismo tiempo que se implementa un diseño **responsive** para que se vea bien en dispositivos de diferentes tamaños (móviles, tabletas, escritorios).
 
 ## Descripción del Proyecto🎮
 
