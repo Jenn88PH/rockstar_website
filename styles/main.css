@@ -793,38 +793,6 @@ input[type='checkbox']:checked ~ .menu {
     transition: all 0.3s ease-in-out;
     cursor: pointer;
   }
-  .header-img:hover {
-    animation: shadow-animation 1s infinite;
-  }
-
-  /* Definir la animación de las sombras */
-  @keyframes shadow-animation {
-    0% {
-      box-shadow: 8px 8px 12px rgba(0, 200, 255, 0.6),
-        -8px -8px 12px rgba(255, 0, 150, 0.6),
-        4px 4px 8px rgba(150, 150, 150, 0.6);
-    }
-    25% {
-      box-shadow: -12px -12px 15px rgba(0, 200, 255, 0.6),
-        12px 12px 15px rgba(255, 0, 150, 0.6),
-        -4px -4px 12px rgba(150, 150, 150, 0.6);
-    }
-    50% {
-      box-shadow: 12px 12px 15px rgba(0, 200, 255, 0.6),
-        -12px -12px 15px rgba(255, 0, 150, 0.6),
-        4px 4px 12px rgba(150, 150, 150, 0.6);
-    }
-    75% {
-      box-shadow: -8px -8px 18px rgba(0, 200, 255, 0.6),
-        8px 8px 18px rgba(255, 0, 150, 0.6),
-        -8px -8px 10px rgba(150, 150, 150, 0.6);
-    }
-    100% {
-      box-shadow: 8px 8px 20px rgba(0, 200, 255, 0.6),
-        -8px -8px 20px rgba(255, 0, 150, 0.6),
-        4px 4px 15px rgba(150, 150, 150, 0.6);
-    }
-  }
 }
 
 /* header fin */
