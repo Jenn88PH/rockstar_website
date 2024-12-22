@@ -480,6 +480,11 @@ body {
   font-weight: 300;
 }
 
+.footer-redes {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer-cont-redes {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -710,7 +715,7 @@ body {
 
   .footer-redes {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     justify-content: space-between;
   }
 
