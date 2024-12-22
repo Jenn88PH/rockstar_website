@@ -1,365 +1,420 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rockstar Games</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="icon" type="image/x-icon" href="./img/RLogo.png" />
+  </head>
 
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Rockstar Games</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-        <link rel="stylesheet" href="./styles/main.css"/>
-        <link rel="icon" type="image/x-icon" href="./img/RLogo.png">
-    </head>
+  <body>
+    <header class="header">
+      <div class="header-izq">
+        <input type="checkbox" id="menu-toggle" name="toggle" />
+        <label for="menu-toggle" class="hamburger">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+        </label>
+        <ul class="menu">
+          <li>
+            <a href="https://www.rockstargames.com/es/newswire">Newswire</a>
+          </li>
+          <li><a href="https://www.rockstargames.com/es/videos">Videos</a></li>
+          <li>
+            <a href="https://www.rockstargames.com/es/downloads">Descargas</a>
+          </li>
+          <li>
+            <a href="https://store.rockstargames.com/"
+              >Tienda<i class="bi bi-box-arrow-up-right"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://support.rockstargames.com/"
+              >Asistencia Tecnica<i class="bi bi-box-arrow-up-right"></i
+            ></a>
+          </li>
+          <button class="header-btn">OBTENER LAUNCHER</button>
+        </ul>
+      </div>
+      <div class="header-cen">
+        <a href="https://www.rockstargames.com/" target="_blank">
+          <img
+            class="header-img"
+            src="./img/OIP-removebg-preview.png"
+            alt="logo.png"
+          />
+          <div class="animation-logo"></div>
+        </a>
+      </div>
+      <div class="header-desktop">
+        <nav class="header-nav">
+          <a href="#">Juegos<i class="bi bi-chevron-down"></i></a>
+          <a href="https://www.rockstargames.com/newswire">Newswire</a>
+          <a href="https://www.rockstargames.com/videos">Videos</a>
+          <a href="https://www.rockstargames.com/downloads">Descargas</a>
+          <a href="https://store.rockstargames.com/"
+            >Tienda<i class="bi bi-box-arrow-up-right"></i
+          ></a>
+          <a href="https://support.rockstargames.com/"
+            >Asistencia Tecnica<i class="bi bi-box-arrow-up-right"></i
+          ></a>
+          <button class="header-btn">OBTENER LAUNCHER</button>
+          <div class="header-lupa">
+            <i class="bi bi-search"></i>
+          </div>
+        </nav>
+      </div>
+      <div class="header-der">
+        <i class="bi bi-person header-login"></i>
+      </div>
+    </header>
 
-    <body>
-        <header class="header">
-            <div class="header-izq">
-                <label for="toggle" class= "hamburger"></label>
-                <input type="checkbox" id="toggle">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
-                    viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-                </svg>
-
-                <div class="menu">
-                    <a href="https://www.rockstargames.com/es/newswire">Newswire</a>
-                    <a href="https://www.rockstargames.com/es/videos">Videos</a>
-                    <a href="https://www.rockstargames.com/es/downloads">Descargas</a>
-                    <a href="https://store.rockstargames.com/">Tienda</a>
-                    <a href="https://support.rockstargames.com/">Asistencia Tecnica</a>
-                </div>
+    <main class="hero">
+      <img
+        class="hero-img"
+        src="./img/5216969680712updates.webp"
+        alt="grand theat auto"
+      />
+      <div class="hero-menu">
+        <div class="hero-menu-title">
+          <div class="hero-menu-txt-title">
+            <h4 class="hero-txt">Grand Theft Auto VI</h4>
+            <h1 class="hero-title">Trailer 1</h1>
+          </div>
+          <button class="hero-btn">VER AHORA</button>
+        </div>
+      </div>
+    </main>
+    <!--Seccion Segunda-->
+    <section class="newswire">
+      <h2 class="newswire-title">Newswire</h2>
+      <div class="newswire-cont-cards">
+        <a href="https://www.rockstargames.com/es/newswire">
+          <!--Newswire container individuales-->
+          <div class="newswire-card">
+            <img
+              class="newswire-img"
+              src="./img/GTA-Heist.jpg"
+              alt="videojuego"
+            />
+            <div class="newswire-cont-txt">
+              <div class="newswire-cont-int">
+                <p class="newswire-txt">GTA Online</p>
+                <p class="newswire-datetime">21 de noviembre de 2024</p>
+              </div>
+              <p class="newswire-p">
+                Vuelve a los clásicos con las bonificaciones en las finales de
+                los golpes originales
+              </p>
             </div>
-            <div class="header-cen">
-                <a href="https://www.rockstargames.com/" target="_blank">
-                    <img class="header-img" src="./img/OIP-removebg-preview.png" alt="logo.png" />
-                    <div class="animation-logo"></div>
-                </a>
+          </div>
+        </a>
+        <a
+          href="https://www.rockstargames.com/es/newswire/article/k44ao7934a73a1/gta-online-agents-of-sabotage-coming-december-10"
+        >
+          <div class="newswire-card">
+            <img
+              class="newswire-img"
+              src="./img/GTA-Doomsday.jpg"
+              alt="videojuego"
+            />
+            <div class="newswire-cont-txt">
+              <div class="newswire-cont-int">
+                <p class="newswire-txt">GTA Online</p>
+                <p class="newswire-datetime">14 de noviembre de 2024</p>
+              </div>
+              <p class="newswire-p">
+                Evita el Juicio Final y consigue el doble de recompensas en la
+                segunda semana del desafio de los golpes
+              </p>
             </div>
-            <div class="header-desktop">
-                <nav class="header-nav">
-                    <a href="#">Juegos<i class="bi bi-chevron-down"></i></a>
-                    <a href="https://www.rockstargames.com/newswire">Newswire</a>
-                    <a href="https://www.rockstargames.com/videos">Videos</a>
-                    <a href="https://www.rockstargames.com/downloads">Descargas</a>
-                    <a href="https://store.rockstargames.com/">Tienda<i class="bi bi-box-arrow-up-right"></i></a>
-                    <a href="https://support.rockstargames.com/">Asistencia Tecnica<i
-                            class="bi bi-box-arrow-up-right"></i></a>
-                    <button class="header-btn">OBTENER LAUNCHER</button>
-                    <div class="header-lupa">
-                        <i class="bi bi-search"></i>
-                    </div>
-                </nav>
+          </div>
+        </a>
+        <a
+          href="https://www.rockstargames.com/es/newswire/article/k44ao7934a73a1/gta-online-agents-of-sabotage-coming-december-10"
+        >
+          <div class="newswire-card">
+            <img
+              class="newswire-img"
+              src="./img/GTA-Circoloco.jpg"
+              alt="videojuego"
+            />
+            <div class="newswire-cont-txt">
+              <div class="newswire-cont-int">
+                <p class="newswire-txt">GTA Online</p>
+                <p class="newswire-datetime">8 de noviembre de 2024</p>
+              </div>
+              <p class="newswire-p">CircoLoco Records presenta Prospa</p>
             </div>
-            <div class="header-der">
-                <i class="bi bi-person header-login"></i>
+          </div>
+        </a>
+        <a
+          href="https://www.rockstargames.com/es/newswire/article/k44ao7934a73a1/gta-online-agents-of-sabotage-coming-december-10"
+        >
+          <div class="newswire-card">
+            <img
+              class="newswire-img"
+              src="./img/GTA-Online.jpg"
+              alt="videojuego"
+            />
+            <div class="newswire-cont-txt">
+              <div class="newswire-cont-int">
+                <p class="newswire-txt">GTA Online</p>
+                <p class="newswire-datetime">7 de noviembgre</p>
+              </div>
+              <p class="newswire-p">
+                Consigue una moto Nagasaki Shinobi gratis con GTA+
+              </p>
             </div>
-        </header>
-
-        <main class="hero">
-            <img class="hero-img" src="./img/5216969680712updates.webp" alt="grand theat auto" />
-            <div class="hero-menu">
-                <div class="hero-menu-title">
-                    <div class="hero-menu-txt-title">
-                        <h4 class="hero-txt">Grand Theft Auto VI</h4>
-                        <h1 class="hero-title">Trailer 1</h1>
-                    </div>
-                    <button class="hero-btn">VER AHORA</button>
-                </div>
+          </div>
+        </a>
+        <a
+          href="https://www.rockstargames.com/es/newswire/article/k44ao7934a73a1/gta-online-agents-of-sabotage-coming-december-10"
+        >
+          <div class="newswire-card">
+            <img
+              class="newswire-img"
+              src="./img/GTA-Challenge.jpg"
+              alt="Img de un videojuego"
+            />
+            <div class="newswire-cont-txt">
+              <div class="newswire-cont-int">
+                <p class="newswire-txt">GTA Online</p>
+                <p class="newswire-datetime">7 de noviembgre</p>
+              </div>
+              <p class="newswire-p">
+                Irrumpe en el desafio de los golpes durante todo este mes
+              </p>
             </div>
-        </main>
-        <!--Seccion Segunda-->
-        <section class="newswire">
-            <h2 class="newswire-title">Newswire</h2>
-            <div class="newswire-cont-cards">
-                <a href="https://www.rockstargames.com/es/newswire">
-                    <!--Newswire container individuales-->
-                    <div class="newswire-card">
-                        <img class="newswire-img" src="./img/GTA-Heist.jpg" alt="videojuego" />
-                        <div class="newswire-cont-txt">
-                            <div class="newswire-cont-int">
-                                <p class="newswire-txt">GTA Online</p>
-                                <time class="newswire-datetime">21 de noviembre de 2024</time>
-                            </div>
-                            <p class="newswire-p">
-                                Vuelve a los clásicos con las bonificaciones en las finales de los golpes originales
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a
-                    href="https://www.rockstargames.com/es/newswire/article/k44ao7934a73a1/gta-online-agents-of-sabotage-coming-december-10">
-                    <div class="newswire-card">
-                        <img class="newswire-img" src="./img/GTA-Doomsday.jpg" alt="videojuego"/>
-                        <div class="newswire-cont-txt">
-                            <div class="newswire-cont-int">
-                                <p class="newswire-txt">GTA Online</p>
-                                <time class="newswire-datetime" >14 de noviembre de 2024</time>
-                            </div>
-                            <p class="newswire-p">
-                                Evita el Juicio Final y consigue el doble de recompensas en la segunda semana del
-                                desafio de los golpes
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a
-                    href="https://www.rockstargames.com/es/newswire/article/k44ao7934a73a1/gta-online-agents-of-sabotage-coming-december-10">
-                    <div class="newswire-card">
-                        <img class="newswire-img" src="./img/GTA-Circoloco.jpg" alt="videojuego"/>
-                        <div class="newswire-cont-txt">
-                            <div class="newswire-cont-int">
-                                <p class="newswire-txt">GTA Online</p>
-                                <time class="newswire-datetime">8 de noviembre de 2024</time>
-                            </div>
-                            <p class="newswire-p">
-                                CircoLoco Records presenta Prospa
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a
-                    href="https://www.rockstargames.com/es/newswire/article/k44ao7934a73a1/gta-online-agents-of-sabotage-coming-december-10">
-                    <div class="newswire-card">
-                        <img class="newswire-img" src="./img/GTA-Online.jpg" alt="videojuego"/>
-                        <div class="newswire-cont-txt">
-                            <div class="newswire-cont-int">
-                                <p class="newswire-txt">GTA Online</p>
-                                <time class="newswire-datetime">7 de noviembgre</time>
-                            </div>
-                            <p class="newswire-p">
-                                Consigue una moto Nagasaki Shinobi gratis con GTA+
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a
-                    href="https://www.rockstargames.com/es/newswire/article/k44ao7934a73a1/gta-online-agents-of-sabotage-coming-december-10">
-                    <div class="newswire-card">
-                        <img class="newswire-img" src="./img/GTA-Challenge.jpg"
-                            alt="Img de un videojuego"/>
-                        <div class="newswire-cont-txt">
-                            <div class="newswire-cont-int">
-                                <p class="newswire-txt">GTA Online</p>
-                                <time class="newswire-datetime">7 de noviembgre</time>
-                            </div>
-                            <p class="newswire-p">
-                                Irrumpe en el desafio de los golpes durante todo este mes
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a
-                    href="https://www.rockstargames.com/es/newswire/article/k44ao7934a73a1/gta-online-agents-of-sabotage-coming-december-10">
-                    <div class="newswire-card">
-                        <img class="newswire-img" src="./img/RDR-Trader.jpg" alt="Img de un videojuego"/>
-                        <div class="newswire-cont-txt">
-                            <div class="newswire-cont-int">
-                                <p class="newswire-txt">GTA Online</p>
-                                <time class="newswire-datetime">5 de noviembgre</time>
-                            </div>
-                            <p class="newswire-p">
-                                Celebra la temporada de Acción de Gracias en Red Dead Online con bonificaciones para
-                                Comerciantes
-                            </p>
-                        </div>
-                    </div>
-                </a>
+          </div>
+        </a>
+        <a
+          href="https://www.rockstargames.com/es/newswire/article/k44ao7934a73a1/gta-online-agents-of-sabotage-coming-december-10"
+        >
+          <div class="newswire-card">
+            <img
+              class="newswire-img"
+              src="./img/RDR-Trader.jpg"
+              alt="Img de un videojuego"
+            />
+            <div class="newswire-cont-txt">
+              <div class="newswire-cont-int">
+                <p class="newswire-txt">GTA Online</p>
+                <p class="newswire-datetime">5 de noviembgre</p>
+              </div>
+              <p class="newswire-p">
+                Celebra la temporada de Acción de Gracias en Red Dead Online con
+                bonificaciones para Comerciantes
+              </p>
             </div>
-            <div class="newswire-cont-btn">
-                <button class="newswire-btn">View More</button>
+          </div>
+        </a>
+      </div>
+      <div class="newswire-cont-btn">
+        <button class="newswire-btn">View More</button>
+      </div>
+    </section>
+    <section class="featured-section">
+      <h2 class="featured-section-title">Featured Games</h2>
+      <!--Juegos destacados container-->
+      <div class="featured-grid">
+        <div class="featured-row">
+          <div class="featured-card">
+            <a href="https://www.rockstargames.com/es/VI"
+              ><img
+                class="featured-img"
+                src="./img/FullScreen_GTA.png"
+                alt="Img del videojuego Grand theft auto"
+              />
+            </a>
+          </div>
+          <div class="featured-square-grid">
+            <div class="featured-card">
+              <a href="https://www.rockstargames.com/es/gta-v"
+                ><img
+                  class="featured-img"
+                  src="./img/GTA-V.jpg"
+                  alt="Img del videojuego Grand theft auto five"
+                />
+              </a>
             </div>
-        </section>
-        <section class="featured-section">
-            <h2 class="featured-section-title">Featured Games</h2>
-            <!--Juegos destacados container-->
-            <div class="featured-grid">
-                <div class="featured-row">
-                    <div class="featured-card">
-                        <a href="https://www.rockstargames.com/es/VI"><img class="featured-img"
-                                src="./img/FullScreen GTA.png"
-                                alt="Img del videojuego Grand theft auto"/>
-                        </a>
-                    </div>
-                    <div class="featured-square-grid">
-                        <div class="featured-card">
-                            <a href="https://www.rockstargames.com/es/gta-v"><img class="featured-img"
-                                    src="./img/GTA-V.jpg"
-                                    alt="Img del videojuego Grand theft auto five"/>
-                                </a>
-                        </div>
-                        <div class="featured-card">
-                            <a href="https://www.rockstargames.com/es/gta-online">
-                                <img class="featured-img" src="./img/GTA-Online.jpg"
-                                    alt="Img del videojuego Grand theft auto online"
-                                />
-                            </a>
-                        </div>
-                        <div class="featured-card">
-                            <a href="https://www.rockstargames.com/es/reddeadredemption2">
-                                <img class="featured-img" src="./img/RDR2.jpg"
-                                    alt="Img del videojuego Red Dead Redemption II"/></a>
-                        </div>
-                        <div class="featured-card">
-                            <a href="https://www.rockstargames.com/es/reddeadredemption"><img class="featured-img"
-                                    src="./img/RDR.jpg" alt="Img del videojuego Red Dead Redemption"></a>
-                        </div>
-                    </div>
-                    <div class="featured-cont-btn">
-                        <button class="featured-btn"><a href="https://www.rockstargames.com/es/games"></a>View More</button>
-                        </a>
-                    </div>
-                </div>
+            <div class="featured-card">
+              <a href="https://www.rockstargames.com/es/gta-online">
+                <img
+                  class="featured-img"
+                  src="./img/GTA-Online.jpg"
+                  alt="Img del videojuego Grand theft auto online"
+                />
+              </a>
             </div>
-        </section>
-        <section class="subscription-section">
-            <div class="subscription-container">
-                <svg width="50" height="50" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M6.44052 7.38435H9.95148C11.5432 7.38435 12.9208 6.89944 12.9208 5.12552C12.9208 3.71806 11.7112 3.41913 10.5482 3.41913H7.28158L6.44052 7.38435ZM20.3443 16.8659H25.9433L20.8905 20.3632L21.7076 25.8742L17.3297 22.5481L11.4544 26L14.2015 20.159C14.2015 20.159 11.0063 16.8272 11.0088 16.8272C10.794 16.5436 10.7222 15.8132 10.7222 15.4989C10.7222 15.1016 10.7476 14.6992 10.7746 14.2706C10.8054 13.7822 10.8383 13.2599 10.8383 12.6723C10.8383 11.2223 10.1977 10.464 8.63164 10.464H5.69546L4.41699 16.4493H0L3.51262 0H11.8248C14.9137 0 17.2711 0.759898 17.2711 4.26394C17.2711 6.73043 16.0572 8.48245 13.3793 8.85033V8.89759C14.6385 9.19693 15.1102 10.0487 15.1102 11.636C15.1102 12.2697 15.091 12.8258 15.0728 13.3489C15.0567 13.8134 15.0415 14.2517 15.0415 14.6952C15.0415 15.2636 15.1893 16.1927 15.5613 16.8272H16.175L19.4563 11.3459L20.3443 16.8659ZM19.6495 17.6698H23.3653L20.0153 19.9878L20.6139 24.0291L17.3905 21.5779L13.2984 23.9806L15.1717 20.0029L12.8939 17.6307H16.6388L19.0079 13.6733L19.6495 17.6698Z"
-                        fill="white" />
-                </svg>
-                <div class="subscription-text-container">
-                    <h4 class="subscription-main-header">Suscríbete a la lista de correo de Rockstar Game</h4>
-                    <p class="subscription-text">Suscríbete a nuestro boletín de noticias para obtener información sobre
-                        los
-                        anuncios y actualizaciones de juegos, detalles sobre eventos especiales, ofertas y mucho más
-                        sobre Rockstar
-                        Games y sus afiliados.</p>
-                </div>
+            <div class="featured-card">
+              <a href="https://www.rockstargames.com/es/reddeadredemption2">
+                <img
+                  class="featured-img"
+                  src="./img/RDR2.jpg"
+                  alt="Img del videojuego Red Dead Redemption II"
+              /></a>
             </div>
-            <a class="subscription-link-button"
-                href="https://signin.rockstargames.com/signin/user-form?cid=rsg">Suscribete
-                ya</a>
-        </section>
-        <footer class="footer">
-            <div class="footer-first">
-                <div class="footer-first-izq">
-                    <a href="https://www.rockstargames.com/es/contact">
-                        <p class="footer-first-txt">Contacto</p>
-                    </a>
-                    <a href="https://www.rockstargames.com/es/careers">
-                        <p class="footer-first-txt">
-                            Empleo</p>
-                    </a>
-                    <a href="https://www.rockstargames.com/es/community-guidelines">
-                        <p class="footer-first-txt">
-                            Directrices de la comunidad</p>
-                    </a>
-                    <a href="https://signin.rockstargames.com/signin/user-form?cid=socialclub">
-                        <p class="footer-first-txt">
-                            Subscribete</p>
-                    </a>
-                </div>
-                <div class="footer-first-der">
-                    <i class="bi bi-globe"></i>
-                    <div class="dropdown">
-                        <a class="btn dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                            aria-expanded="false"></a>Select a
-                        Language<i class="bi bi-chevron-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Deutsch</a></li>
-                            <li><a class="dropdown-item" href="#">English</a></li>
-                            <li><a class="dropdown-item" href="#">Español</a></li>
-                            <li>
-                                <a class="dropdown-item" href="#">Español Latinoamérica</a>
-                            </li>
-                            <li><a class="dropdown-item" href="#">Français</a></li>
-                            <li><a class="dropdown-item" href="#">Italiano</a></li>
-                            <li><a class="dropdown-item" href="#">日本語</a></li>
-                            <li><a class="dropdown-item" href="#">한국어</a></li>
-                            <li><a class="dropdown-item" href="#">Polski</a></li>
-                            <li><a class="dropdown-item" href="#">Português do Brasil</a></li>
-                            <li><a class="dropdown-item" href="#">Русский</a></li>
-                            <li><a class="dropdown-item" href="#">繁體中文</a></li>
-                            <li><a class="dropdown-item" href="#">简体中文</a></li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="featured-card">
+              <a href="https://www.rockstargames.com/es/reddeadredemption"
+                ><img
+                  class="featured-img"
+                  src="./img/RDR.jpg"
+                  alt="Img del videojuego Red Dead Redemption"
+              /></a>
             </div>
-            <div class="footer-redes">
-                <div class="footer-cont-redes">
-                    <a href="https://twitter.com/rockstargames"><i class="bi bi-twitter-x footer__rrss"></i></a>
-                    <a href="https://instagram.com/rockstargames"><i class="bi bi-instagram footer__rrss"></i></a>
-                    <a href="https://www.youtube.com/rockstargames"><i class="bi bi-youtube footer__rrss"></i></a>
-                    <a href="https://www.facebook.com/rockstargames"><i class="bi bi-facebook footer__rrss"></i></a>
-                    <a href="https://twitch.tv/rockstargames"><i class="bi bi-twitch footer__rrss"></i></a>
-                </div>
-                <div class="footer-info-cont">
-                    <div class="footer-info-cont-txt">
-                        <a href="https://www.rockstargames.com/corpinfo">Corporacíon</a>
-                        <a href="https://www.rockstargames.com/privacy">Privacidad</a>
-                        <a href="https://www.rockstargames.com/#">
-                            Ajustes de cookies
-                        </a>
-                        <a href="https://www.rockstargames.com/cookies">Politica de cookies</a>
-                        <a href="https://www.rockstargames.com/legal">Aviso legal</a>
-                        <a href="https://www.rockstargames.com/ccpa">
-                            No quiero que vendais mis datos
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-city">
-                <p class="footer-city-txt">Rockstar Games</p>
-                <div class="footer-cities">
-                    <p class="footer-cities-txt">New York</p>
-                    <p class="footer-cities-txt">London</p>
-                    <p class="footer-cities-txt">Paris</p>
-                    <p class="footer-cities-txt">Bogotá</p>
-                </div>
-                <p class="footer-data-txt">MCMXCVIII</p>
-            </div>
-        </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </body>
-
+          </div>
+          <div class="featured-cont-btn">
+            <a
+              class="featured-btn"
+              href="https://www.rockstargames.com/es/games"
+              >View More</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subscription-section">
+      <div class="subscription-container">
+        <svg
+          width="50"
+          height="50"
+          viewBox="0 0 26 26"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M6.44052 7.38435H9.95148C11.5432 7.38435 12.9208 6.89944 12.9208 5.12552C12.9208 3.71806 11.7112 3.41913 10.5482 3.41913H7.28158L6.44052 7.38435ZM20.3443 16.8659H25.9433L20.8905 20.3632L21.7076 25.8742L17.3297 22.5481L11.4544 26L14.2015 20.159C14.2015 20.159 11.0063 16.8272 11.0088 16.8272C10.794 16.5436 10.7222 15.8132 10.7222 15.4989C10.7222 15.1016 10.7476 14.6992 10.7746 14.2706C10.8054 13.7822 10.8383 13.2599 10.8383 12.6723C10.8383 11.2223 10.1977 10.464 8.63164 10.464H5.69546L4.41699 16.4493H0L3.51262 0H11.8248C14.9137 0 17.2711 0.759898 17.2711 4.26394C17.2711 6.73043 16.0572 8.48245 13.3793 8.85033V8.89759C14.6385 9.19693 15.1102 10.0487 15.1102 11.636C15.1102 12.2697 15.091 12.8258 15.0728 13.3489C15.0567 13.8134 15.0415 14.2517 15.0415 14.6952C15.0415 15.2636 15.1893 16.1927 15.5613 16.8272H16.175L19.4563 11.3459L20.3443 16.8659ZM19.6495 17.6698H23.3653L20.0153 19.9878L20.6139 24.0291L17.3905 21.5779L13.2984 23.9806L15.1717 20.0029L12.8939 17.6307H16.6388L19.0079 13.6733L19.6495 17.6698Z"
+            fill="white"
+          />
+        </svg>
+        <div class="subscription-text-container">
+          <h4 class="subscription-main-header">
+            Suscríbete a la lista de correo de Rockstar Game
+          </h4>
+          <p class="subscription-text">
+            Suscríbete a nuestro boletín de noticias para obtener información
+            sobre los anuncios y actualizaciones de juegos, detalles sobre
+            eventos especiales, ofertas y mucho más sobre Rockstar Games y sus
+            afiliados.
+          </p>
+        </div>
+      </div>
+      <a
+        class="subscription-link-button"
+        href="https://signin.rockstargames.com/signin/user-form?cid=rsg"
+        >Suscribete ya</a
+      >
+    </section>
+    <footer class="footer">
+      <div class="footer-first">
+        <div class="footer-first-izq">
+          <a href="https://www.rockstargames.com/es/contact">
+            <p class="footer-first-txt">Contacto</p>
+          </a>
+          <a href="https://www.rockstargames.com/es/careers">
+            <p class="footer-first-txt">Empleo</p>
+          </a>
+          <a href="https://www.rockstargames.com/es/community-guidelines">
+            <p class="footer-first-txt">Directrices de la comunidad</p>
+          </a>
+          <a
+            href="https://signin.rockstargames.com/signin/user-form?cid=socialclub"
+          >
+            <p class="footer-first-txt">Subscribete</p>
+          </a>
+        </div>
+        <div class="footer-first-der">
+          <i class="bi bi-globe"></i>
+          <div class="dropdown">
+            <a
+              class="btn dropdown-toggle"
+              href="#"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            ></a
+            >Select a Language<i class="bi bi-chevron-down"></i>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Deutsch</a></li>
+              <li><a class="dropdown-item" href="#">English</a></li>
+              <li><a class="dropdown-item" href="#">Español</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Español Latinoamérica</a>
+              </li>
+              <li><a class="dropdown-item" href="#">Français</a></li>
+              <li><a class="dropdown-item" href="#">Italiano</a></li>
+              <li><a class="dropdown-item" href="#">日本語</a></li>
+              <li><a class="dropdown-item" href="#">한국어</a></li>
+              <li><a class="dropdown-item" href="#">Polski</a></li>
+              <li><a class="dropdown-item" href="#">Português do Brasil</a></li>
+              <li><a class="dropdown-item" href="#">Русский</a></li>
+              <li><a class="dropdown-item" href="#">繁體中文</a></li>
+              <li><a class="dropdown-item" href="#">简体中文</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-redes">
+        <div class="footer-cont-redes">
+          <a href="https://twitter.com/rockstargames"
+            ><i class="bi bi-twitter-x footer__rrss"></i
+          ></a>
+          <a href="https://instagram.com/rockstargames"
+            ><i class="bi bi-instagram footer__rrss"></i
+          ></a>
+          <a href="https://www.youtube.com/rockstargames"
+            ><i class="bi bi-youtube footer__rrss"></i
+          ></a>
+          <a href="https://www.facebook.com/rockstargames"
+            ><i class="bi bi-facebook footer__rrss"></i
+          ></a>
+          <a href="https://twitch.tv/rockstargames"
+            ><i class="bi bi-twitch footer__rrss"></i
+          ></a>
+        </div>
+        <div class="footer-info-cont">
+          <div class="footer-info-cont-txt">
+            <a href="https://www.rockstargames.com/corpinfo">Corporacíon</a>
+            <a href="https://www.rockstargames.com/privacy">Privacidad</a>
+            <a href="https://www.rockstargames.com/#"> Ajustes de cookies </a>
+            <a href="https://www.rockstargames.com/cookies"
+              >Politica de cookies</a
+            >
+            <a href="https://www.rockstargames.com/legal">Aviso legal</a>
+            <a href="https://www.rockstargames.com/ccpa">
+              No quiero que vendais mis datos
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-city">
+        <p class="footer-city-txt">Rockstar Games</p>
+        <div class="footer-cities">
+          <p class="footer-cities-txt">New York</p>
+          <p class="footer-cities-txt">London</p>
+          <p class="footer-cities-txt">Paris</p>
+          <p class="footer-cities-txt">Bogotá</p>
+        </div>
+        <p class="footer-data-txt">MCMXCVIII</p>
+      </div>
+    </footer>
+  </body>
 </html>

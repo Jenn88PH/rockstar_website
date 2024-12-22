@@ -33,27 +33,26 @@ body {
   background-color: black;
   color: white;
 }
+
 /* header comienzo */
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
-  top: 0;
   width: 100%;
   background-color: black;
   height: 83px;
   padding: 32px;
-  overflow: hidden;
+  overflow: visible;
   opacity: 0.9;
-  z-index: 1000;
   backdrop-filter: blur(15px);
   transition: transform 0.8s ease-in-out;
 }
 
 .header-izq {
   margin-left: 8px;
+  overflow: visible;
 }
 
 .header-izq svg {
@@ -99,48 +98,60 @@ body {
 .menu {
   display: none; /* Ocultar menú por defecto */
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
   background-color: black;
   position: absolute;
-  top: 0;
+  top: 83px;
   left: 0;
-  width: 100%;
-  height: 300px;
+  width: 100vw;
+  height: auto;
   padding: 20px;
   justify-content: center;
-  align-items: center;
+  align-items: right;
   transition: transform 0.3s ease-in-out;
-  z-index: 1000;
+  z-index: 999;
+
+  .header-btn {
+    margin: 8px;
+    background-color: #fcaf17;
+    border: transparent;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 7px 10px;
+    transition: all 0.2s ease-in-out;
+    width: auto;
+    height: 50px;
+  }
 }
 
 .menu a {
+  display: flex;
+  justify-content: space-between;
   color: white;
-  font-size: medium;
+  font-size: x-large;
   text-decoration: none;
-  padding: 15px;
   background-color: black;
   text-align: left;
   width: 100%;
   transition: background-color 0.3s;
 }
 
-input[type='checkbox'] {
+#menu-toggle {
   display: none; /* Ocultar checkbox */
 }
 
-input[type='checkbox']:checked ~ .menu {
+#menu-toggle:checked ~ .menu {
   display: flex;
   /* Mostrar menú desplegable cuando está seleccionado */
 }
 
 .hamburger {
   display: block;
+  cursor: pointer;
 }
 
 /* main comienzo */
-.hero {
-  margin-top: 80px;
-}
 
 .hero-img {
   width: 100%;
@@ -421,7 +432,6 @@ input[type='checkbox']:checked ~ .menu {
 
 /* footer comienzo */
 .footer {
-  width: 390px;
   height: 850px;
   padding: 64px 32px;
 }
