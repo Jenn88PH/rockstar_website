@@ -24,7 +24,7 @@ rockstart-website/
 │  
 ├── img/
 │ └── (Imágenes utilizadas en el sitio web)
-│ ├── styles
+│ ├── styles/
 │ ├── main.css
 │ └── reset.css
 └── index.html
